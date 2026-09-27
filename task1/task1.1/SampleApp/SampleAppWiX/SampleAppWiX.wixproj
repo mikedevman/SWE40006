@@ -1,0 +1,14 @@
+﻿<Project Sdk="WixToolset.Sdk/5.0.2">
+	<PropertyGroup>
+		<DefineConstants>
+			SampleAppBin=..\x64\Debug;
+			Manufacturer=SampleApp;
+			ProductName=SampleApp;
+			ProductVersion=1.0.0;
+		</DefineConstants>
+	</PropertyGroup>
+	<ItemGroup>
+		<PackageReference Include="WixToolset.Heat" Version="5.0.2" />
+		<PackageReference Include="WixToolset.UI.wixext" Version="5.0.2" />
+	</ItemGroup>
+</Project>

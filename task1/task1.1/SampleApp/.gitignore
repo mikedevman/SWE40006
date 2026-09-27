@@ -1,0 +1,57 @@
+# ====================================================================
+# Visual Studio / C++ / MSBuild Ignore Rules
+# ====================================================================
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Build & Compilation Outputs
+Debug/
+Release/
+x64/
+x86/
+ARM/
+ARM64/
+[Bb]in/
+[Oo]bj/
+
+# Intermediate files
+*.obj
+*.ilk
+*.pdb
+*.tlog
+*.idb
+*.ipch
+*.pch
+*.res
+*.log
+*.lastcodeanalysissucceeded
+
+# ====================================================================
+# WiX Toolset Output
+# ====================================================================
+*.msi
+*.msm
+*.msp
+*.wixpdb
+*.wixobj
+.wix/
+
+# ====================================================================
+# Operating System & Editor Files
+# ====================================================================
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+.DS_Store
+
+# VS Code
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace

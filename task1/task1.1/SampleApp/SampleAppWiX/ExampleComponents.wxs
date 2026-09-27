@@ -1,0 +1,18 @@
+<Wix xmlns="http://wixtoolset.org/schemas/v4/wxs">
+  <Fragment>
+	  <ComponentGroup Id="AppFiles" Directory="INSTALLFOLDER">
+		  <Component Id="Cmp_SampleApp" Guid="*">
+			  <File Id="File_SampleApp"
+					Source="$(var.SampleAppBin)\SampleApp.exe">
+			  </File>
+
+			  <Shortcut Name="$(var.ProductName)" Directory="ProgramMenuFolder"
+					Advertise="yes" WorkingDirectory="INSTALLFOLDER" />
+
+			  <Shortcut Name="$(var.ProductName)" Directory="DesktopFolder"
+					Advertise="yes" WorkingDirectory="INSTALLFOLDER" />
+			  
+		  </Component>
+	  </ComponentGroup>
+  </Fragment>
+</Wix>
