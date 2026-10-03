@@ -1,0 +1,140 @@
+%! TEX root = task2_report.tex
+\documentclass[11pt,a4paper]{article}
+
+% ====================================================================
+% Packages & Layout Configuration
+% ====================================================================
+\usepackage[utf8]{inputenc}
+\usepackage[margin=0.85in]{geometry}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{hyperref}
+\usepackage{xurl}
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage{titlesec}
+\usepackage{fancyhdr}
+\usepackage{float}
+\usepackage{caption}
+\usepackage{subcaption}
+
+% Number subsections as 1, 2, 3, 4 instead of 0.1, 0.2...
+\renewcommand{\thesubsection}{\arabic{subsection}}
+
+% Keep \texttt unbroken and push whole token to the next line if it does not fit
+\let\oldtexttt\texttt
+\renewcommand{\texttt}[1]{\mbox{\oldtexttt{#1}}}
+\sloppy
+
+% Fix fancyhdr headheight warning
+\setlength{\headheight}{14pt}
+
+% Set graphicspath to local screenshots folder
+\graphicspath{{./screenshots/}}
+
+% Hyperlink styling
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue!75!black,
+    citecolor=blue!75!black,
+    urlcolor=blue!75!black
+}
+
+% Code listing styling
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codebackground}{rgb}{0.96,0.96,0.96}
+\definecolor{codekeyword}{rgb}{0.13,0.13,1}
+\definecolor{codestring}{rgb}{0.63,0.13,0.94}
+
+\lstdefinestyle{customcode}{
+    backgroundcolor=\color{codebackground},
+    basicstyle=\ttfamily\footnotesize,
+    breaklines=true,
+    captionpos=b,
+    commentstyle=\color{codegray},
+    keywordstyle=\color{codekeyword},
+    stringstyle=\color{codestring},
+    frame=single,
+    tabsize=2,
+    showstringspaces=false
+}
+\lstset{style=customcode}
+
+% Page header & footer
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{\textbf{SWE40006 Software Deployment and Evolution}}
+\cfoot{\thepage}
+
+\begin{document}
+
+% ====================================================================
+% Mandated Header (Student details, Unit details, Dates, Task level)
+% ====================================================================
+\begin{center}
+    {\LARGE \textbf{Deployment Portfolio Task 2}}\\[0.2cm]
+    {\large \textit{Deployment to the AWS Cloud Platform}}\\[0.1cm]
+\end{center}
+
+\noindent\rule{\textwidth}{1pt}\par\vspace{0.2cm}
+\begin{enumerate}
+    \item \textbf{Student details:}
+    \begin{itemize}
+        \item \textbf{Student ID:} 105559691
+        \item \textbf{Full name:} Dang Duc Minh
+    \end{itemize}
+    \item \textbf{Unit details:}
+    \begin{itemize}
+        \item \textbf{Unit code and Name:} SWE40006 Software Deployment and Evolution
+        \item \textbf{Semester:} Semester 3 2026
+    \end{itemize}
+    \item \textbf{Due date and submission date:}
+    \begin{itemize}
+        \item \textbf{Due date:} 5 October 2026, 23:59
+        \item \textbf{Submission date:} \today
+    \end{itemize}
+    \item \textbf{Declaration of the task level attempted:}
+    \begin{itemize}
+        \item \textbf{Level Attempted:} High Distinction (Sub-tasks 2.1 to 2.4)
+        \item \textbf{}
+    \end{itemize}
+\end{enumerate}
+\noindent\rule{\textwidth}{1pt}
+
+\newpage
+
+% ====================================================================
+% Task 2.1: Pass Tier (EC2, Key Pair, Security Group, WordPress)
+% ====================================================================
+\section*{Task 2.1 (Pass):}
+
+\subsection{AWS Account Setup:}
+
+\subsection{SSH Key Pair Creation:}
+
+\subsection{EC2 Instance Launch:}
+
+\subsection{WordPress Deployment:}
+
+% ====================================================================
+% Task 2.2: Credit Tier (ELB, External RDS, S3 Backup & Restore)
+% ====================================================================
+\section*{Task 2.2 (Credit):}
+
+% ====================================================================
+% Task 2.3: Distinction Tier (Launch Template, ASG & Scaling Test)
+% ====================================================================
+\section*{Task 2.3 (Distinction):}
+
+% ====================================================================
+% Task 2.4: High Distinction Tier (SSH Verification & CLI Interaction)
+% ====================================================================
+\section*{Task 2.4 (High Distinction):}
+
+\vspace{20pt}
+\begin{center}
+\textbf{--- THE END ---}    
+\end{center}
+
+\end{document}
